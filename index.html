@@ -1,11 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="tr">
 <head>
-  <title>Mehmet Emre | Kişisel Site</title>
-  <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mehmet Emre - Kişisel Web Sitesi</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1>Merhaba! Ben Mehmet Emre</h1>
-  <p>Yapay zeka, otomasyon ve teknoloji projelerimi burada paylaşıyorum.</p>
+    <header>
+        <div class="container">
+            <h1>Mehmet Emre</h1>
+            <p class="subtitle">Teknoloji Tutkunu | Mekatronik Mühendisi Adayı</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#hakkimda">Hakkımda</a></li>
+                <li><a href="#ilgi-alanlarim">İlgi Alanlarım</a></li>
+                <li><a href="#projelerim">Projelerim (Yakında)</a></li>
+                <li><a href="#iletisim">İletişim</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="hakkimda" class="container">
+        <h2>Hakkımda</h2>
+        <p>Merhaba, ben Mehmet Emre.</p>
+        <p>Teknolojiye küçük yaşlardan beri meraklıyım. Otomasyon, yapay zekâ ve elektronik sistemlerle uğraşmayı seviyorum.</p>
+        <p>Meslek lisesinde elektrik-elektronik eğitimi aldıktan sonra Marmara Üniversitesi Mekatronik Mühendisliği bölümünde öğrenimime devam ediyorum.</p>
+        <p>Bu site, üzerinde çalıştığım projeleri, öğrendiklerimi ve deneyimlerimi paylaşmak için oluşturuldu.</p>
+    </section>
+
+    <section id="ilgi-alanlarim" class="container">
+        <h2>İlgi Alanlarım ve Yeteneklerim</h2>
+        <p>Aşağıdaki teknolojiler ve konular üzerine çalışmaktan ve yeni şeyler öğrenmekten keyif alıyorum:</p>
+        <ul>
+            <li>Otomasyon Sistemleri</li>
+            <li>Yapay Zekâ (AI)</li>
+            <li>Elektronik Sistem Tasarımı</li>
+            <li>Raspberry Pi Projeleri</li>
+            <li>Home Assistant ve Akıllı Ev Sistemleri</li>
+            <li>AI Agent Sistemleri</li>
+            <li>Sesli Yapay Zekâ Uygulamaları</li>
+            <li>Mekatronik Mühendisliği Uygulamaları</li>
+            <li>Gömülü Sistemler</li>
+            <li>Pratik Çözüm Geliştirme</li>
+            <li>Sistem Entegrasyonu</li>
+        </ul>
+        <p>Projelerimde pratik çözümler üretmeyi, farklı sistemleri entegre ederek yeni deneyimler oluşturmayı hedefliyorum.</p>
+    </section>
+
+    <section id="projelerim" class="container">
+        <h2>Projelerim</h2>
+        <p>Burada yakında üzerinde çalıştığım ve tamamladığım projelerden bazılarını paylaşacağım.</p>
+        </section>
+
+    <section id="iletisim" class="container">
+        <h2>İletişim</h2>
+        <p>Benimle iletişime geçmek için aşağıdaki e-posta adresini kullanabilirsiniz:</p>
+        <p><a href="mailto:memreyecelebi@icloud.com">memreyecelebi@icloud.com</a></p>
+        </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="currentYear"></span> Mehmet Emre. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("currentYear").textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
