@@ -1,0 +1,188 @@
+/* Genel Stiller */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Açık gri arka plan */
+    color: #333; /* Koyu gri metin */
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #2c3e50; /* Koyu mavi-gri başlıklar */
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+a {
+    color: #3498db; /* Mavi link rengi */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #2980b9; /* Link üzerine gelince koyu mavi */
+}
+
+/* Header (Başlık Alanı) */
+header {
+    background: #2c3e50; /* Koyu mavi-gri arka plan */
+    color: #fff; /* Beyaz metin */
+    padding: 40px 0;
+    text-align: center;
+    border-bottom: 4px solid #3498db; /* Mavi alt çizgi */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.8em;
+    font-weight: 700;
+    color: #fff;
+}
+
+header .subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+    font-weight: 300;
+    margin-top: 5px;
+    color: #ecf0f1; /* Açık gri alt başlık */
+}
+
+/* Navigasyon Menüsü */
+nav {
+    background: #34495e; /* Daha koyu bir mavi-gri */
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    position: sticky; /* Sayfa kaydırıldığında sabit kalır */
+    top: 0;
+    z-index: 1000; /* Diğer elementlerin üzerinde kalması için */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.95em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #3498db; /* Üzerine gelince mavi */
+}
+
+/* Bölümler (Sections) */
+section {
+    padding: 40px 0;
+    border-bottom: 1px solid #eee; /* Bölümler arası ince çizgi */
+    background-color: #fff; /* Bölüm arka planı beyaz */
+    margin-bottom: 20px; /* Bölümler arası boşluk */
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+section:last-of-type {
+    border-bottom: none;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em;
+    color: #34495e; /* Bölüm başlığı rengi */
+}
+
+/* Hakkımda Bölümü - Profil fotoğrafı stili kaldırıldı */
+/* #hakkimda .profile-pic { ... } kaldırıldı */
+
+/* İlgi Alanlarım Bölümü */
+#ilgi-alanlarim ul {
+    list-style: disc; /* Madde imleri */
+    padding-left: 30px;
+}
+
+#ilgi-alanlarim ul li {
+    margin-bottom: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+/* İletişim Bölümü */
+#iletisim p {
+    text-align: center;
+    font-size: 1.1em;
+}
+
+#iletisim .social-links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#iletisim .social-links a {
+    margin: 0 15px;
+    font-size: 1.2em;
+    /* İkon fontları veya SVG'ler eklenebilir */
+}
+
+
+/* Footer (Alt Bilgi) */
+footer {
+    background: #2c3e50; /* Header ile aynı koyu arka plan */
+    color: #ecf0f1; /* Açık gri metin */
+    text-align: center;
+    padding: 25px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+/* Duyarlılık (Responsive Design) */
+@media(max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    header h1 {
+        font-size: 2.2em;
+    }
+
+    header .subtitle {
+        font-size: 1em;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    section h2 {
+        font-size: 1.8em;
+    }
+    /* Profil fotoğrafı ile ilgili responsive stil de kaldırıldı */
+}
